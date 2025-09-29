@@ -1,57 +1,89 @@
-# Solving Inventory Inefficiencies Using SQL
+# SQL Inventory Optimization System
 
-A complete end-to-end data-driven solution for inventory analytics and decision support across a multi-store retail network. This project implements a normalized SQL schema, analytical views, and a live dashboard for real-time business insights.
-
----
-
-## 🚀 Live Dashboard
-
-Access the real-time web dashboard hosted separately:
-
-🔗 [UrbanCo Inventory Management Dashboard (Live)](https://nwesha.github.io/Dashboard_urbanco_inventory_optimised/)
-*(Hosted on a different repo with frontend + JSON integration)*
+A comprehensive SQL-based inventory management solution designed for multi-store retail operations. This project features advanced analytics, automated reporting, and data-driven insights to optimize stock levels and reduce inefficiencies.
 
 ---
 
-## 🧠 Project Highlights
+## ✨ Key Features
 
-* **Normalized SQL Schema:** Includes `stores`, `products`, `inventory_data`, and `inventory_kpis` with composite primary keys and indexing.
-* **ETL via SQL:** Bulk import from raw CSV, transformation into normalized tables, data validation, and KPI generation.
-* **Analytics Layer:** Core SQL views like `vw_current_stock_levels`, `vw_reorder_analysis`, `vw_inventory_turnover`, `vw_abc_classification`, `vw_seasonal_analysis`.
-* **Dashboard Reports:** Executive-focused summary views such as `vw_executive_kpi_dashboard`, `vw_stockout_risk`, and category/store performance metrics.
-* **Live Visualization:** Real-time dashboard for key metrics and store-level insights.
+**Database Architecture**
+- Normalized MySQL schema with optimized indexing
+- Comprehensive tables: stores, products, inventory data, and KPIs
+- Automated data validation and integrity checks
 
----
+**Advanced Analytics**
+- Real-time stock level monitoring and alerts
+- Inventory turnover analysis by category and location
+- ABC classification for strategic stock prioritization
+- Seasonal demand pattern analysis
+- Predictive stockout risk assessment
 
-## 📊 Sample Insights
-
-* Reorder alerts based on safety stock and lead time
-* Inventory turnover analysis across product categories
-* ABC classification of products for optimized stock prioritization
-* Seasonal demand forecasting with weather/event context
-* Stockout risk prediction by store and region
-
----
-
-## 📄 Documentation
-
-* **[SQL Documentation](./sql-documentation.docx)** — technical breakdown of schema, views, and queries
-* **[Executive Report](./Executive%20Report%20(Insights%20and%20Recommendations).docx)** — visual, business-oriented interpretation of outputs
-* **[ER Diagram](./ERD.pdf)** — visual map of database structure
+**Reporting & Insights**
+- Executive dashboard with key performance indicators
+- Automated reorder recommendations based on lead times
+- Store and category performance comparisons
+- Data export capabilities for further analysis
 
 ---
 
-## 🛠 Technologies Used
+## 🛠️ Technical Stack
 
-* MySQL 8+
-* SQL Views and Analytics
-* CSV export queries
-* Live Dashboard (Simple JS hosted separately)
+- **Database:** MySQL 8+
+- **Analytics:** SQL Views & Stored Procedures
+- **Data Processing:** CSV import/export workflows
+- **Visualization:** Web-based dashboard integration
+
+---
+
+## � Project Structure
+
+```
+sql scripts/
+├── urban-retail-schema.sql      # Database schema definition
+├── data-loading-scripts.sql     # Data import procedures
+├── core-analytics-queries.sql   # Core analytical views
+└── dashboard-report-queries.sql # Reporting queries
+
+csv files generated from sql queries/
+├── Various analytical outputs and reports
+
+ERD-mysql-workbench/
+└── Database design files
+```
 
 ---
 
-## 📬 Feedback & Contributions
+## � Getting Started
 
-This project was developed as part of an academic analytics initiative. Feedback is welcome. For collaboration or suggestions, please open an issue.
+1. **Database Setup**
+   ```sql
+   -- Run the schema creation script
+   source sql scripts/urban-retail-schema.sql
+   
+   -- Load initial data
+   source sql scripts/data-loading-scripts.sql
+   ```
+
+2. **Analytics Deployment**
+   ```sql
+   -- Create analytical views
+   source sql scripts/core-analytics-queries.sql
+   
+   -- Set up dashboard reports
+   source sql scripts/dashboard-report-queries.sql
+   ```
 
 ---
+
+## � Available Analytics
+
+- **Stock Management:** Current levels, reorder points, safety stock analysis
+- **Performance Metrics:** Turnover rates, slow-moving inventory identification
+- **Strategic Planning:** ABC classification, seasonal trends, demand forecasting
+- **Risk Assessment:** Stockout predictions, overstock alerts
+
+---
+
+## 🤝 Contributing
+
+This project welcomes contributions and feedback. Feel free to open issues for suggestions or improvements.

@@ -8,7 +8,7 @@ A comprehensive SQL-based inventory management solution designed for multi-store
 
 **Database Architecture**
 - Normalized MySQL schema with optimized indexing
-- Comprehensive tables: stores, products, inventory data, and KPIs
+- Comprehensive tables: stores, products, inventory data and KPIs
 - Automated data validation and integrity checks
 
 **Advanced Analytics**
@@ -87,3 +87,4 @@ ERD-mysql-workbench/
 ## 🤝 Contributing
 
 This project welcomes contributions and feedback. Feel free to open issues for suggestions or improvements.
+
